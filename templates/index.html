@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PabloBot — Final</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body data-theme="dark">
+
+  <div class="background"></div>
+
+  <div class="app">
+    <aside class="side">
+      <!-- avatar: using your uploaded file path -->
+      <img class="logo" src=""C:\Users\praty\Downloads\PabloBot\static\pablo_logo.png"" alt="Pablo logo">
+
+      <h1>PabloBot</h1>
+      <p class="muted">Presentation-ready bot — voice, memory, jokes, facts.</p>
+
+      <div class="controls">
+        <button id="voiceToggle" class="btn">🎤 Voice: Off</button>
+        <select id="voiceSelect" class="select"></select>
+        <select id="accentSelect" class="select">
+            <option value="any">Accent: Any</option>
+            <option value="en-US">Accent: US</option>
+            <option value="en-GB">Accent: UK</option>
+            <option value="en-IN">Accent: Indian</option>
+            <option value="deep">Deep / AI</option>
+        </select>
+        <button id="clearName" class="btn secondary">Clear Name</button>
+        <button id="exportChat" class="btn secondary">Export Chat</button>
+        <label class="themeSwitch">Theme: <input id="themeToggle" type="checkbox"></label>
+      </div>
+
+      <div class="help">
+        <strong>Try:</strong>
+        <ul>
+          <li>"My name is Priya"</li>
+          <li>"Give me game recommendations"</li>
+          <li>"Tell me a joke"</li>
+          <li>"Tell the time / date / day"</li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="chat">
+      <div class="chatHeader">
+        <div class="botAvatar"><img src="file:///mnt/data/a28b0483-974f-4a70-a27f-7f5cc6db0759.png" alt=""></div>
+        <div class="title"><h2>PabloBot</h2><span id="status">Type or press 🎤</span></div>
+      </div>
+
+      <div id="messages" class="messages" aria-live="polite"></div>
+
+      <div class="inputRow">
+        <input id="userInput" type="text" placeholder="Ask about games, movies, jokes, time..." autocomplete="off">
+        <button id="sendBtn" class="send">Send</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
